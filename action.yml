@@ -90,7 +90,7 @@ runs:
       run: |
         # echidna campaign
         ${{ github.action_path }}/launch.sh echidna-action-image:${{ inputs.echidna-version }}
-      shell: bash
+      shell: bash {0}
       env:
         INPUT_FILES: ${{ inputs.files }}
         INPUT_CONTRACT: ${{ inputs.contract }}
